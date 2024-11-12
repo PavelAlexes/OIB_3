@@ -31,12 +31,10 @@ def translate(alphabet, arrCode, text, encode, inputs):
     input_value = inputs[idx]
 
     for char in text:
-        print(f'Символ {char} заменяем на ', end='')
         try:
             if encode:
                 index = alphabet[x][m].index(char)
                 result_char = arrCode[z][n][index]
-                print(result_char)
                 result.append(result_char)
                 if n + 1 < len(arrCode[z]) and c != input_value:
                     n += 1
@@ -53,7 +51,6 @@ def translate(alphabet, arrCode, text, encode, inputs):
             else:
                 index = arrCode[z][n].index(char)
                 result_char = alphabet[x][m][index]
-                print(result_char)
                 result.append(result_char)
                 if n + 1 < len(arrCode[z]) and c1 != input_value:
                     n += 1
