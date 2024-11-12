@@ -65,8 +65,7 @@ def translate(alphabet, arrCode, text, encode, inputs):
                     input_value = inputs[idx]
                     z = (z + 1) % len(arrCode)
         except ValueError:
-            result.append(char)
-            print(char)
+            print("Такой символ отсутствует в алфавите")
 
     print("Полученный результат: ")
     return "".join(result)
